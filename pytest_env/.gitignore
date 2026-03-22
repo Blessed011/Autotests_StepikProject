@@ -7,4 +7,7 @@ _pycache_/
 .pytest_cache/
 pytest_env/
 .env
+env/
+.venv
+venv/
 *.log
