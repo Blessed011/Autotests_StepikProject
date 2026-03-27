@@ -3,10 +3,14 @@ from selenium.webdriver.common.by import By
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     BASKET_BUTTON = (By.CSS_SELECTOR, ".basket-mini.pull-right.hidden-xs > .btn-group > a.btn.btn-default")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
     
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTRATION_FORM = (By.CSS_SELECTOR, "#register_form")
+    REG_EMAIL_FIELD = (By.CSS_SELECTOR, '#register_form input[type="email"]')
+    REG_PASSWORD_FIELDS = (By.CSS_SELECTOR, '#register_form input[type="password"]')
+    REG_BUTTON = (By.CSS_SELECTOR, 'button[name="registration_submit"]')
 
 class ProductPageLocators():
     ADD_TO_BASKET = (By.CSS_SELECTOR, '#add_to_basket_form button[type="submit"]')
